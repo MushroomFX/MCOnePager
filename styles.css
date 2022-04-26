@@ -50,12 +50,17 @@ body {
       rgba(231, 118, 118, 1) 0%,
       rgba(212, 42, 42, 1) 100%
     );
+    margin:1em;
+    transform: translate(0,1em)
   }
-  .admin {
-  }
-  .mod {
-  }
-  .support {
+ #previews {
+     margin:2em;
+    display: grid; 
+    grid-template-columns: auto auto auto auto auto; 
+    grid-template-rows: 100%; 
+    gap: 0em 0em; 
+    grid-template-areas: 
+      ". . ."; 
   }
   img {
     padding: 0.25em;
@@ -63,4 +68,25 @@ body {
     height: calc(100% - 0.5em);
     clip-path: circle(45% at 50% 50%);
   }
-  
+  .card{
+      background:#f0f0fe;
+      width: 7em;
+      height: 10em;
+      border-radius: 1em;
+      color:black;
+      transform: translate(-50%)
+  }
+  .name{
+      text-align: center;
+      transform: translate(0,1em)
+  }
+  .more{
+      text-align: center;
+      background: black;
+      height:1em;
+      padding:1em;
+  }
+  .cardwrapper {
+    width: 50%;
+    transform: translate(100%);
+}
