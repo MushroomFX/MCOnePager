@@ -7,7 +7,7 @@ function splitClass(className, speed) {
         var temp = "";
         for (j = 0; j < elem.length; j++) {
           var anmState = j * speed;
-          temp += `<fakediv class="${className}" style="-webkit-animation-delay: ${anmState}s">${elem[j]}</fakediv>`;
+          temp += `<a class="${className}" style="-webkit-animation-delay: ${anmState}s">${elem[j]}</a>`;
         }
         console.log(temp);
         elems[i].innerHTML = temp;
