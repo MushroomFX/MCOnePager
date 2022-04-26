@@ -7,14 +7,13 @@ var users = [
 ]
 
 for(i=0;i<users.length;i++){
-    addCard(users[i])
+    addCard(users[i][0],users[i][1],users[i][2])
 }
 
-var count = 0
 
 function addCard(rank,name,img){
-    count++
-document.getElementById(rank+"s").innerHTML += `
+    var s = rank+"s"
+document.getElementById(s).innerHTML += `
 <div class="cardwrapper">
     <div class="${rank} card">
         <div class="icon">
@@ -26,5 +25,9 @@ document.getElementById(rank+"s").innerHTML += `
     </div>
 </div>
 `
-document.getElementById(rank+"s").style.gridTemplateColumns = count
+document.getElementById(s).value = ""
+for(j=0;j<document.getElementsByClassName(rank).length;j++){
+    document.getElementById(s).value +=" auto"
+}
+document.getElementById(rank+"s").style.gridTemplateColumns = document.getElementById(s).value
 }
