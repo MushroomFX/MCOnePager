@@ -26,7 +26,7 @@ function splitClass(className, speed) {
       move(false);
     }
   });
-  pos = 0;
+  pos = 1;
   
   function move(direction) {
     if (direction == true && pos > 1) {
@@ -42,4 +42,7 @@ function splitClass(className, speed) {
     subClass[pos].classList.remove("activesubClass");
     console.log(direction, pos);
   }
+  
+
+
   
