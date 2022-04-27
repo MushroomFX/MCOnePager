@@ -5,10 +5,12 @@ function splitClass(className, speed) {
       if (elems[i].tagName == "DIV") {
         var elem = elems[i].innerHTML;
         var temp = "";
+        temp +=  `<p class="${className}">`
         for (j = 0; j < elem.length; j++) {
           var anmState = j * speed;
           temp += `<span class="${className}" style="-webkit-animation-delay: ${anmState}s">${elem[j]}</span>`;
         }
+        temp +=  `</p>`
         console.log(temp);
         elems[i].innerHTML = temp;
       }

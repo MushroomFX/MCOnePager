@@ -38,6 +38,9 @@ body {
     -webkit-animation-delay: 0.1s;
     font-size:2em;
   }
+  p.wave_txt{
+    text-align: center;
+  }
   
   @-webkit-keyframes wave {
     to {
