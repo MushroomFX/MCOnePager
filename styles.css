@@ -44,7 +44,7 @@ body {
   
   @-webkit-keyframes wave {
     to {
-      text-shadow: 20px 0 70px #ff0266;
+      text-shadow: 1em 0 2em #ff0266;
       color: #ff0266;
     }
   }
